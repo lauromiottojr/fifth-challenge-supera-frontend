@@ -1,0 +1,108 @@
+.statementCard {
+    background-color: #222;
+    border-radius: 5px;
+    padding: 30px 10px;
+    width: 100%;
+}
+
+.statementTitle {
+    color: #efefef;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formControl {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formControl p span {
+    font-weight: bold;
+    color: #FFBB33;
+    opacity: .8;
+}
+
+.searchFormControl {
+    align-items: center;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.searchFormControl div {
+    margin-right: 1rem;
+}
+
+.inputField {
+    height: 46px;
+    background-color: #1b2531;
+    border: 1px solid #384459;
+    border-radius: 5px;
+    color: #9aaabe;
+    padding: 0 20px;
+    font-size: 18px;
+    margin-top: .3rem;
+}
+
+.statementBody {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.statementBody thead {
+    height: 55px;
+    font-size: 16px;
+    color: #e9e9e9;
+    font-weight: 700;
+}
+
+.statementBody tbody {
+    font-size: 14px;
+    font-weight: 400;
+    color: #cfcfcf;
+    text-align: center;
+}
+
+.statementBody tbody tr {
+    height: 74px;
+    border-top: 1px solid #5f6e82;
+}
+
+.statementBody tbody tr:hover>td {
+    background-color: #384459;
+}
+
+@media (min-width: 576px) {
+    .statementCard {
+        padding: 35px;
+    }
+
+    .statementBody tbody tr {
+        height: 55px;
+    }
+
+    .statementBody tbody {
+        font-size: 18px;
+    }
+}
+
+.teste {
+    background-color: #384459;
+    border: 2px solid #384459;
+    border-radius: 4px;
+    color: #fff;
+    padding: .3rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 1rem;
+}
+
+.teste:hover {
+    background-color: transparent;
+    color: #f7d354;
+}
