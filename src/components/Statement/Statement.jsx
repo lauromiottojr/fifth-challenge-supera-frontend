@@ -19,7 +19,7 @@ const Statement = () => {
 
     const getTransactions = async () => {
         try {
-            const response = await statementFetch.get('/posts')
+            const response = await statementFetch.get('/transactions')
             const data = response.data
             setTransactions(data)
         } catch (error) {
@@ -83,11 +83,11 @@ const Statement = () => {
                         <tbody>
                             {transactions.length === 0 ? (<tr><td>Carregando...</td></tr>) : (
                                 transactions.map((transaction) => (
-                                    <tr key={transaction.id}>
-                                        <td>{transaction.userId}</td>
-                                        <td>{transaction.id}</td>
-                                        <td>{transaction.title}</td>
-                                        <td>{transaction.title}</td>
+                                    <tr key={transaction.transactionId}>
+                                        <td>{transaction.transactionDate}</td>
+                                        <td>{transaction.transactionAmount}</td>
+                                        <td>{transaction.transactionType}</td>
+                                        <td>{transaction.transactionToName ? transaction.transactionToName : (<p>N/A</p>)}</td>
                                     </tr>
                                 ))
                             )}
