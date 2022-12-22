@@ -88,7 +88,7 @@
     }
 }
 
-.teste {
+.btnIcon {
     background-color: #384459;
     border: 2px solid #384459;
     border-radius: 4px;
@@ -100,9 +100,14 @@
     cursor: pointer;
     transition: .4s;
     margin-top: 1rem;
+    margin-right: 1rem;
 }
 
-.teste:hover {
+.btnContainer {
+    display: flex;
+}
+
+.btnIcon:hover {
     background-color: transparent;
     color: #f7d354;
 }
