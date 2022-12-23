@@ -5,10 +5,6 @@ const statementFetch = axios.create({
     headers: {
         "Content-Type": "application/json",
     },
-    data: JSON.stringify({
-        id: 'test',
-        command: 'echo michael'
-    }),
 });
 
 export default statementFetch
